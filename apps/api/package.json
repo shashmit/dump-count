@@ -1,0 +1,23 @@
+{
+  "name": "@dumcont/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "start": "bun src/index.ts",
+    "check": "bun run typecheck",
+    "typecheck": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "@clerk/backend": "3.2.0",
+    "@hono/zod-validator": "^0.4.3",
+    "hono": "^4.7.2",
+    "libphonenumber-js": "^1.11.20",
+    "postgres": "^3.4.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.5",
+    "typescript": "^5.8.2"
+  }
+}
